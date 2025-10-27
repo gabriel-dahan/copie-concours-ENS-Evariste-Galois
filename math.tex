@@ -1,0 +1,54 @@
+\documentclass[11pt]{article}
+
+\usepackage{graphicx}
+\setkeys{Gin}{keepaspectratio}
+\let\Oldincludegraphics\includegraphics
+
+\usepackage{caption}
+\DeclareCaptionFormat{nocaption}{}
+\captionsetup{format=nocaption,aboveskip=0pt,belowskip=0pt}
+
+\usepackage{float}
+\floatplacement{figure}{H} % forces figures to be placed at the correct location
+\usepackage{xcolor} % Allow colors to be defined
+\usepackage{enumerate} % Needed for markdown enumerations to work
+\usepackage[margin=2cm]{geometry} % Used to adjust the document margins
+\usepackage{amsmath} % Equations
+\usepackage{amssymb} % Equations
+\usepackage{textcomp} % defines textquotesingle
+
+\usepackage{hyperref}
+
+    
+\title{CONCOURS GENERAL DE L'AN 1828}
+\author{Evariste Galois}
+\date{}
+
+\begin{document}
+    
+\maketitle
+
+\textit{Ce document est une transcription en \LaTeX{} de la copie du concours g\'en\'eral de l'an 1828/9 (à l'ENS d'Ulm), r\'edig\'ee par Evariste Galois, disponible ici : }\url{https://math.univ-lyon1.fr/~caldero/galois_copie.pdf}\newline
+\newline
+    
+Soit $Ex=0$ l'équation pour laquelle en \dots la limite supérieure $K$ des racines, \dots dans
+laquelle nous supposerons pour plus de simplicité le plus haut terme positif. Comme 
+l'hypothèse $x=+\infty$ donne pour résultat $Ex>0$, et qu'aucune racine ne doit être 
+comprise entre $+\infty$ et une limite supérieure des racines, il faudrait que toute limite 
+supérieure des racines substituée dans l'équation doit donner un résultat positif. Mais 
+$K$ étant une limite, $K+z$ ($z$ étant postitif) en est encore une. Donc $E(K+z)$ doit 
+être positif pour toute valeur positive de $z$, $K$ sera limite. Car aucune valeur \dots supérieure à
+$K$ n'annulera $Ex$.
+
+Il faut donc et il suffit que pour toute valeur positive de $z$, on ait $E(K+z)$ ou bien 
+
+$$Ek+E'k\cdot z+\frac{1}{2}E''k\cdot z^2+\frac{1}{2\cdot 3}E'''k\cdot z^3+\dots$$
+
+positif. Et cette condition sera évidemment remplie, si l'on suppose que tous les coefficients 
+de $z$ dans cette fonction soient positifs.
+
+Ainsi, on n'a qu'à résoudre le système d'inégalités 
+
+$$Ek>0, \quad E'k>0, \quad E''k>0, \quad \dots, \quad E^{(m-1)}k>0$$
+
+\end{document}
