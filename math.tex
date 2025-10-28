@@ -33,6 +33,8 @@ r\'edig\'ee par Evariste Galois, disponible ici : \url{https://math.univ-lyon1.f
 Les mots que je n'ai pas pu d\'echiffrer sont remplac\'es par des `\dots`.}\newline
 \newline
     
+\quad\quad{\textit{$1^{ere}$ Question\quad $1^{ere}$ Méthode}}\newline
+
 Soit $Ex=0$ l'équation pour laquelle en \dots la limite supérieure $K$ des racines, \dots dans
 laquelle nous supposerons pour plus de simplicité le plus haut terme positif. Comme 
 l'hypothèse $x=+\infty$ donne pour résultat $Ex>0$, et qu'aucune racine ne doit être 
@@ -58,6 +60,25 @@ le plus petit nombre qui satisfasse à la fois aux deux dernières, puis aux tro
 dernières, et ainsi de suite jusqu'à ce qu'on ait le plus petit nombre qui rend tous
 les termes positifs. Arrivé à ce nombre, on aura la limite supérieure cherchée.
 
-Si l'on 
+Si l'on demandait au contraire la limite inférieure $l$ des racines, on ferait dans
+$Ex$, $x=-y$, on chercherait la limite supérieure $K$ des racines de l'équation
+$E(-y)=0$, et l'on ferait $l=-K$, et comme $K$ est plus grand que toutes les valeurs de
+$y$, il s'ensuit que $-K$ ou $l$ est plus petit que toutes celles de $-y$ ou de $x$.
+
+On peut présenter cette règle, appelée Méthode de Newton, d'une manière un peu plus simple.
+
+Puisque $K$ est plus grand et $l$ plus petit que toutes les racines de l'équation $Ex=0$,
+il faudra que l'équation en $z$, $E(K+z)=0$ n'ait pas de racine $>0$, sans quoi 
+$Ex=0$ aurait des racines $>K$, et de même, que l'équation en $z$, $E(l+z)=0$ 
+n'ait pas de racine $<0$, sans quoi $Ex=0$ aurait des racines $<l$. Les condition à
+exprimer sont donc que $E(K+z)=0$ n'ait pas de racine positive, et que $E(l+z)=0$
+n'en ait pas de négative. Il suffit pour celà que la première n'ait que des
+\dots, et la seconde, que des variations de signe. C'est qui donnera encore
+deux systèmes d'inégalités à résoudre dont l'un donnera $K$ et l'autre $l$.\newline
+
+\quad\quad{\textit{$2^{eme}$ Méthode}}\newline
+
+La $1^{ere}$ Méthode donne en général des approximations assez bonnes, mais on voit
+qu'elle est longue et pénible dans la pratique.
 
 \end{document}
