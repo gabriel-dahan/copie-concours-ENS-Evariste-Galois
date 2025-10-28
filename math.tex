@@ -79,6 +79,25 @@ deux systèmes d'inégalités à résoudre dont l'un donnera $K$ et l'autre $l$.
 \quad\quad{\textit{$2^{eme}$ Méthode}}\newline
 
 La $1^{ere}$ Méthode donne en général des approximations assez bonnes, mais on voit
-qu'elle est longue et pénible dans la pratique.
+qu'elle est longue et pénible dans la pratique. En voici une plus expéditive.
+
+Soit $m$ le degré de l'équation, $n+1$ le rang du premier terme négatif, 
+$N$ le plus grand des coefficients des termes négatifs, pris positivement, en sorte que
+l'équation débarrassée du coefficient fractionnaire, soit de la forme:
+
+\begin{equation}
+x^m+\dots+Hx^{m-n+1}-Kx^{m-n}-\dots -Nx^p\dots=Ex=0
+\end{equation}
+
+Il s'agit d'abord de trouver un nombre positif qui donne dans ce polynôme un résultat
+positif ainsi que tout nombre plus grand. Or l'inégalité $Ex>0$ est évidemment 
+satisfaite par toute solution positive de l'inégalité 
+
+\begin{equation}
+x^m-Nx^{m-n}-Nx^{m-n-1}-\dots-Nx-N > 0
+\end{equation}
+
+à savoir $x^m-N\frac{x^{m-n+1}-1}{x-1} > 0$. Cette inégalité n'étant pas satisfaite en général
+par $(1)$, la marche que nous suivons
 
 \end{document}
